@@ -1,0 +1,159 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111 url('https://i.postimg.cc/9XtdtVYG/6399a4d27711a5ad2c9bf5cd-ben-sweet-2-Lowvi-VHZ-E-unsplash-1.jpg') no-repeat center center/cover;
+      color: #eee;
+      background-attachment: fixed;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: #f00;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f00;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
+      animation: fadeInUp 2.5s ease-in-out;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid #f00;
+      padding-left: 1rem;
+    }
+
+    .content {
+      line-height: 1.6;
+    }
+
+    .box {
+      background: #222;
+      padding: 2rem;
+      margin: 1rem 0;
+      border-left: 4px solid #f00;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects, .skills,.certs, .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .contact-form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      background: #333;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff3333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a1a;
+      color: #888;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
