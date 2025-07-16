@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hrishu Kumar Singh | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #111 url('https://i.postimg.cc/9XtdtVYG/6399a4d27711a5ad2c9bf5cd-ben-sweet-2-Lowvi-VHZ-E-unsplash-1.jpg') no-repeat center center/cover;
+      color: #eee;
+      background-attachment: fixed;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: #f00;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f00;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ccc;
+      animation: fadeInUp 2.5s ease-in-out;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid #f00;
+      padding-left: 1rem;
+    }
+
+    .content {
+      line-height: 1.6;
+    }
+
+    .box {
+      background: #222;
+      padding: 2rem;
+      margin: 1rem 0;
+      border-left: 4px solid #f00;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects, .skills,.certs, .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .contact-form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      background: #333;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff3333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1a1a1a;
+      color: #888;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">HRISHU<span style="color: #fff;">DEV</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+<header> 
+<h1>Hrishu Kumar Singh</h1>
+<p><span style="color: white;">Software Developer // </span><span style="color: whitesmoke;"> AI & Web Enthusiast</span></p>
+<p><span style="color: white;">Phone: </span><span style="color:white ;">+91-7428950939</span></p>
+<p>Email: <a href="mailto:hrishukumar03@gmail.com" style="color:#f00;">hrishukumar03@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/hrishu-kumar-singh/" target="_blank" style="color:#f00;">linkedin.com/in/hrishu-kumar-singh</a></p>
+<p>GitHub: <a href="https://github.com/hksX" target="_blank" style="color:#f00;">github.com/hksX</a></p>
+</header>
+
+
+  <section id="about">
+    <h2 class="section-title">Career Objective</h2>
+    <div class="box">
+      Passionate about building scalable software and AI-integrated solutions. Quick learner, adaptable, and eager to contribute to innovative tech environments. Seeking a challenging software development role to contribute to impactful projects and grow within a collaborative team.
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="box">
+      <p><strong>B.E. in Information Technology</strong><br>Chandigarh University, Punjab (2021–2025) – CGPA: 7.26</p>
+      <p><strong>Senior Secondary</strong> – KV Delhi Cantt (2021) – 70%</p>
+      <p><strong>Secondary</strong> – KV Delhi Cantt (2019) – 77%</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills">
+      <div class="box">
+        <strong>Languages</strong><br>C++, Python, Java
+      </div>
+      <div class="box">
+        <strong>Web Development</strong><br>HTML, CSS, JavaScript, PHP, React, Angular
+      </div>
+      <div class="box">
+        <strong>Databases</strong><br>MySQL, MongoDB, NoSQL 
+      </div>
+      <div class="box">
+        <strong>Tools</strong><br>Jupyter, VS Code, Power BI, MS Excel 
+      </div>
+      <div class="box">
+        <strong>Core Concepts</strong><br>DSA, DBMS, Computer Networks, Machine Learning
+      
+      <div class="box">
+  <strong>Core Competencies</strong>
+  <ul style="margin-top: 1rem; padding-left: 1.2rem; line-height: 1.6; list-style: none;">
+    <li>Problem Solving & Analytical Thinking</li>
+    <li>Team Collaboration</li>
+    <li>Effective Communication</li>
+    <li>Time Management & Adaptability</li>
+    <li>Continuous Learning & Innovation</li>
+  </ul>
+</div>
+
+</div>
+  </section>
+
+  <section id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements">
+      <div class="box">
+        <strong>Patent Published</strong><br>"Keyword Spotting for Smart Home Devices" (Application No. 202511038528 A, Published May 16, 2025)
+      </div>
+      <div class="box">
+        Active participant in LeetCode and Codeforces competitions;Finalist in multiple university-level hackathons
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="box">
+        <strong>E-Commerce Website</strong><br>
+        Full-stack platform with authentication, cart, and MySQL integration.
+      </div>
+      <div class="box">
+        <strong>Weather Forecast App</strong><br>
+        Displays real-time weather using OpenWeather API.
+      </div>
+      <div class="box">
+        <strong>Password Generator (Python)</strong><br>
+        CLI-based tool for customizable, strong password generation.
+      </div>
+      <div class="box">
+        <strong>Smart Home Automation</strong><br>
+        AI-enabled home automation using Google Assistant & NodeMCU.
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certs">
+    <div class="box">
+      <strong>Automate Cybersecurity Tasks with Python</strong><br>
+      Google (Coursera)
+    </div>
+    <div class="box">
+      <strong>Introduction to Web Development with HTML, CSS, JavaScript</strong><br>
+      IBM (Coursera)
+    </div>
+    <div class="box">
+      <strong>Python for Everybody</strong><br>
+      Coursera
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-container" style="display: flex; align-items: center; gap: 2rem;">
+    <!-- Contact Form -->
+    <form class="contact-form" style="flex: 1;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Image on the Side -->
+    <div class="contact-image" style="flex: 1;">
+      <img src="https://storage.googleapis.com/designify-production-images-tmp/1baf7fff-5279-4aaa-9cbd-bb609c5d2284.png" alt="Contact Image" style="width: 80%;height: auto; max-width: 400px;">
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 Hrishu Kumar Singh. Built with 💻 and 🚗 passion.
+  </footer>
+
+  <script>
+    // On scroll, reveal sections with 'box' class
+    const boxes = document.querySelectorAll('.box');
+
+    window.addEventListener('scroll', () => {
+      const triggerBottom = window.innerHeight / 5 * 4;
+
+      boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          box.classList.add('visible');
+        } else {
+          box.classList.remove('visible');
+        }
+      });
+    });
+
+    // Trigger the scroll event immediately to show boxes
+    window.dispatchEvent(new Event('scroll'));
+  </script>
+
+</body>
+</html>
