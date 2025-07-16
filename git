@@ -1,0 +1,4 @@
+git add --all
+git commit -m "Initial commit"
+git config --global user.name "Hrishu Kumar Singh"
+git config --global user.email "hks@portfolio.com"
